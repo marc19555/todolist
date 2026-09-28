@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 5%;
+    background-color: burlywood;
+}
+
+header h1{
+    font-size: 80%;
+    margin: 0 50%;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex: 1;
+}
+
+.section_gauche{
+    flex: 30%;
+    background-color: antiquewhite;
+}
+
+
+
+.milieu{
+    flex: 40%;
+    background-color: azure;
+}
+
+.section_droite{
+    flex: 30%;
+    background-color: antiquewhite;
+}
+
+footer{
+    height: 5%;
+    margin: 0;
+    background-color: aqua;
+}
+
+footer h2{
+    margin: 0;
+}
