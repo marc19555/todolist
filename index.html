@@ -15,11 +15,11 @@
             <section class="section_gauche_haut">
                 <h2>age</h2>
                 <section class="image_enfant">
-                    <img src="" alt="image enfant">
+                    <img src="asset/image_enfant.webp" alt="image enfant">
                     <h3>6-12 ans</h3>
                 </section>
                 <section class="image_adulte">
-                    <img src="" alt="image adulte">
+                    <img src="asset/image_adulte.webp" alt="image adulte">
                     <h3>13 +</h3>
                 </section>
             </section>
@@ -30,26 +30,47 @@
         <section class="milieu">
             <h2>Taches</h2>
             <ul>
-                <li>blabla</li>
-                <li>bleble</li>
-                <li>bloublou</li>
+                <label>
+                    <input type="checkbox">
+                    <h3>blablabla</h3>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <h3>blebleble</h3>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <h3>blublublu</h3>
+                </label>
             </ul>
         </section>
         <section class="section_droite">
             <div>
                 <h2>Nouvelle tache</h2>
             </div>
-            <section class="ajouter_liste">
-                <ul>
-                    <li>blabla</li>
-                    <li>bleble</li>
-                    <li>bloublou</li>
-                </ul>
-            </section>
-            <div>
-                <button></button>
-            </div>
+            <form class="ajout_tache">
+                <section class="formulair_ntache">
+                    <label for="titre">titre</label>
+                    <input type="text" id="titre" placeholder="Nom de la tache">
+                </section>
+                <section class="formulair_ntache">
+                    <label for="time">Temps</label>
+                    <input type="text" id="time" placeholder="temps de la tache">
+                </section>
+                <section class="formulair_ntache">
+                    <label for="Priorité">Priorité</label>
+                    <select id="Priorité">
+                        <option value="basse">basse</option>
+                        <option value="moyenne">moyenne</option>
+                        <option value="haute">haute</option>
+                    </select>
+                </section>
+
+            </form>
         </section>
+        <div>
+            <button class="gros_bouton">+</button>
+        </div>
     </main>
     <footer>
         <h2>DI 25-27</h2>

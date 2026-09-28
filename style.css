@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  main { flex-direction: column; }
+  .section_gauche, .section_droite { flex: initial; }
+  body { height: auto; }
+}
+
 body{
     margin: 0;
     height: 100vh;
@@ -6,13 +12,12 @@ body{
 }
 
 header{
-    height: 5%;
     background-color: burlywood;
 }
 
 header h1{
-    font-size: 80%;
-    margin: 0 50%;
+    font-size: 1em;
+    text-align: center;
 }
 
 main{
@@ -22,24 +27,96 @@ main{
 }
 
 .section_gauche{
-    flex: 30%;
+    flex: 0 0 30%;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 
+.section_gauche_haut{
+    flex: 1;
+    text-align: center;
+}
 
+.section_gauche_haut img{
+    text-align: center;
+    width: auto;
+    height: 90px;
+}
+
+.section_gauche_bas{
+    flex: 1;
+}
 
 .milieu{
-    flex: 40%;
+    flex: 1;
     background-color: azure;
 }
 
+.milieu h2{
+    text-align: center;
+}
+
+.milieu label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.milieu label h3 {
+  margin: 0;
+}
+
 .section_droite{
-    flex: 30%;
+    flex: 0 0 30%;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_droite h2{
+    text-align: center;
+}
+
+.gros_bouton{
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem; 
+    z-index: 10;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1;
+    border: none;
+
+    background-color: #2563eb;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+
+.gros_bouton:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.gros_bouton:active{
+    transform: scale(0.95);
 }
 
 footer{
-    height: 5%;
+    height: 2em;
     margin: 0;
     background-color: aqua;
 }
