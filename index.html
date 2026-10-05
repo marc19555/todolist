@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>todolist</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,20 +30,7 @@
         </section>
         <section class="milieu">
             <h2>Taches</h2>
-            <ul>
-                <label>
-                    <input type="checkbox">
-                    <h3>blablabla</h3>
-                </label>
-                <label>
-                    <input type="checkbox">
-                    <h3>blebleble</h3>
-                </label>
-                <label>
-                    <input type="checkbox">
-                    <h3>blublublu</h3>
-                </label>
-            </ul>
+            <section id="affiche_tache"></section>
         </section>
         <section class="section_droite">
             <div>
@@ -58,8 +46,8 @@
                     <input type="text" id="time" placeholder="temps de la tache">
                 </section>
                 <section class="formulair_ntache">
-                    <label for="Priorité">Priorité</label>
-                    <select id="Priorité">
+                    <label for="priorite">Priorité</label>
+                    <select id="priorite">
                         <option value="basse">basse</option>
                         <option value="moyenne">moyenne</option>
                         <option value="haute">haute</option>
@@ -69,7 +57,7 @@
             </form>
         </section>
         <div>
-            <button class="gros_bouton">+</button>
+            <button class="gros_bouton" id="gros_bouton">+</button>
         </div>
     </main>
     <footer>
